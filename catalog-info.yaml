@@ -1,0 +1,26 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: shopping-ui
+  description: Shopping Front End
+  annotations:
+    backstage.io/kubernetes-id: shopping-ui
+    backstage.io/kubernetes-namespace: workloads
+    backstage.io/kubernetes-cluster: team-a-cluster
+    github.com/project-slug: nicpym/shopping-ui
+    argocd/app-name: shopping-ui
+    argocd/app-namespace: team-a-cluster
+    backstage.io/techdocs-ref: dir:.
+  tags:
+    - react
+  links:
+    - url: http://shopping-ui.team-a-cluster.localhost
+      title: Website
+      icon: web
+spec:
+  type: website
+  lifecycle: experimental
+  owner: group:default/team-a
+  system: connect-demo
+  dependsOn:
+    - resource:default/team-a-cluster

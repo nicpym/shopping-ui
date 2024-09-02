@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: shopping-ui
+spec:
+  selector:
+    matchLabels:
+      app: shopping-ui
+  template:
+    metadata:
+      labels:
+        app: shopping-ui
+    spec:
+      containers:
+      - name: shopping-ui
+        image: to-be-replaced:latest
+        ports:
+        - containerPort: 80

@@ -1,0 +1,8 @@
+site_name: shopping-ui
+site_description: Shopping Front End
+
+nav:
+  - Introduction: index.md
+
+plugins:
+  - techdocs-core
