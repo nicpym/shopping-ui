@@ -9,6 +9,6 @@ commonLabels:
   app: shopping-ui
   backstage.io/kubernetes-id: shopping-ui
 images:
-- name: to-be-replaced
-  newName: ealen/echo-server
-  newTag: latest
+  - name: to-be-replaced
+    newName: ghcr.io/nicpym/shopping-ui
+    newTag: v0.0.1
