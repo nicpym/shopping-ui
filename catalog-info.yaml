@@ -24,3 +24,9 @@ spec:
   system: connect-demo
   dependsOn:
     - resource:default/team-a-cluster
+  consumesApis:
+    - orders-management-svc
+    - product-catalog-svc
+    - review-and-rating-svc
+    - shipping-svc
+    - shopping-cart-svc
